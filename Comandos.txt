@@ -1,0 +1,14 @@
+git init
+git add .
+git config --global user.name ""
+git config --global user.email prueba@ejemplo.com
+git config --list 
+git commit -m "Comentario referente a la modificacion" 
+git remote add origin https:
+git push origin rama
+git branch
+git branch Developer                                        = nombre de la rama a trabajar
+git checkout NOMBRERAMA                                     = Pasar entre ramas
+git branch -d qa                                            = Eliminar rama
+
+

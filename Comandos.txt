@@ -1,16 +1,19 @@
-git init                                                   = Inicializa un repositorio
-git add .                                                  = Agrega los cambios de los archivos
-git config --global user.name ""                           = Configuración unicial nombre de usuario
-git config --global user.email prueba@ejemplo.com           = = Configuración unicial nombre de email
-git config --list                                           = Informe de configuracion
-git commit -m "Comentario referente a la modificacion"      = Agregar y confirmar un cambio por medio de un comentario
-git remote add origin https:                                = Agregar sitio remoto del repositio creado
-git push origin rama                                        = Confirmar los cambios en la rama 
-git branch                                                  = Ver las ramas creadas en el repositorio
-git branch [nueva_rama]                                     = Crear rama 
-git checkout [nueva_rama]                                   = Cambio de ramas
-git branch -d [nueva_rama]                                  = Eliminar rama UBICANDOSE EN LA RAMA MAESTRA OJO
-git merge [rama]            = Unificacion de ramas, Se debe UBICAR EN LA RAMA MAESTRA Y UTILIZAR EL COMANDO
+git init                                                        = Inicializa un repositorio
+git add .                                                       = Agrega los cambios de los archivos
+git config --global user.name ""                                = Configuración unicial nombre de usuario
+git config --global user.email prueba@ejemplo.com               = Configuración unicial nombre de email
+git config --list                                               = Informe de configuracion
+git status                                                      = Muestra los archivos afectados con cambios
+git commit -m "Comentario referente a la modificacion"          = Agregar y confirmar un cambio por medio de un comentario
+git remote add origin https:                                    = Agregar sitio remoto del repositio creado
+git push origin rama                                            = Confirmar los cambios en la rama 
+git branch                                                      = Ver las ramas creadas en el repositorio
+git branch [nueva_rama]                                         = Crear rama 
+git checkout [nueva_rama]                                       = Cambio de ramas
+git branch -d [nueva_rama]                                      = Eliminar rama UBICANDOSE EN LA RAMA MAESTRA OJO
+git merge [rama]                                                = Unificacion de ramas, Se debe UBICAR EN LA RAMA MAESTRA Y UTILIZAR EL COMANDO
+git remote add origin git@github.com:hovanegasr/1aClaseGit.git  = Enviar y confirmar cambios al repositorio
+
 
 
 

@@ -28,7 +28,9 @@ COMANDOS PARA ACTUALIZACION ENTRE RAMAS
 1.  git status                                                   = a rama hija
 1.1 Si todo ok  (si hay mod = act) pasamos a #1                  = 
 1.2 git push                                                     =     
-1.3 HUGO VANEGAS@DESKTOP-C0K4SI0 MINGW64 ~/Desktop/1aClaseGit (master) = Linea de consola que muestra la rama master a afectar
+
+1.3 
+1.4 HUGO VANEGAS@DESKTOP-C0K4SI0 MINGW64 ~/Desktop/1aClaseGit (master) = Linea de consola que muestra la rama master a afectar
     git merge developer                                                = Actualizacion a la rama developer(Rama hija)
 
 2.  git push origin master  

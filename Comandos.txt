@@ -23,6 +23,9 @@ git checkout [nueva_rama]                                       = Cambio ENTRE r
 git branch -d [nombre de la rama a borrar]                      = Eliminar rama (UBICANDOSE EN LA RAMA MAESTRA OJO se puede borrar rama hija) y debe haberse fusionado con la rama master antes de borrar de lo contrario no lo permite
 git branch -D [nombre de la rama a borrar]                      = Eliminar rama (UBICANDOSE EN LA RAMA MAESTRA OJO) borra la rama sin tener en cuenta los cambios que tenga sin fusionar
 
+1.1 git fetch                                                   = Descarga la rama y aunque queda oculta pasamos al punto 1.2
+1.2 git branch -r                                               = Permite ver las ramas creadas en el repositorio remoto y visualizarlas en el repositorio local
+
 COMANDOS PARA ACTUALIZACION ENTRE RAMAS
 0.  Revisamos en que rama estamos trabajando
 1.  git status                                                   = a rama hija

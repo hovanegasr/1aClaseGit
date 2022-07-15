@@ -10,7 +10,7 @@ git init                                                        = Inicializa un 
 git status                                                      = Muestra los archivos afectados con cambios
 git add .                                                       = Agrega los cambios de los archivos al repositorio
 git commit -m "Comentario referente a la modificacion"          = Agregar y confirmar un cambio por medio de un comentario 
-git push -u origin master                                       = Actualiza los cambios a nivel local
+git push origin master                                          = Actualiza los cambios a nivel local o rama donde estemos ubicados para el caso la rama master[nombre de la rama a actualizar]
 git merge [rama]                                                = Unificacion de ramas, Se debe UBICAR EN LA RAMA MAESTRA Y UTILIZAR EL COMANDO
 git remote add origin git@github.com:hovanegasr/1aClaseGit.git  = Enviar y confirmar cambios al repositorio
 git remote add origin [https:]                                  = Agregar cambios al sitio remoto del repositorio
@@ -20,9 +20,22 @@ git branch --list                                               = Visualizacion 
 git branch                                                      = Ver las ramas creadas en el repositorio * Rama en la que se trabaja en el momento
 git branch [nueva_rama]                                         = Crear rama 
 git checkout [nueva_rama]                                       = Cambio ENTRE ramas
-git branch -d [nueva_rama]                                      = Eliminar rama UBICANDOSE EN LA RAMA MAESTRA OJO
-git revert [3321844]                                            = Deshace el commit indicado [#######]- Crea uno nuevo como test
+git branch -d [nombre de la rama a borrar]                      = Eliminar rama (UBICANDOSE EN LA RAMA MAESTRA OJO se puede borrar rama hija) y debe haberse fusionado con la rama master antes de borrar de lo contrario no lo permite
+git branch -D [nombre de la rama a borrar]                      = Eliminar rama (UBICANDOSE EN LA RAMA MAESTRA OJO) borra la rama sin tener en cuenta los cambios que tenga sin fusionar
+
+COMANDOS PARA ACTUALIZACION ENTRE RAMAS
+0.  Revisamos en que rama estamos trabajando
+1.  git status                                                   = a rama hija
+1.1 Si todo ok  (si hay mod = act) pasamos a #1                  = 
+1.2 git push                                                     =     
+1.3 HUGO VANEGAS@DESKTOP-C0K4SI0 MINGW64 ~/Desktop/1aClaseGit (master) = Linea de consola que muestra la rama master a afectar
+    git merge developer                                                = Actualizacion a la rama developer(Rama hija)
+
+2.  git push origin master  
+2.1 Everything up-to-date
+
+3. git 
 git merge                                                       = Fusiona la rama trabajada con la rama padre
 git log -- oneline                                              = ver nuestro historial de commits
-
+git revert [3321844]                                            = Deshace el commit indicado [#######]- Crea uno nuevo como test
 

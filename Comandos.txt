@@ -1,30 +1,28 @@
 COMANDOS GIT DE CONFIGURACION INICIAL:
-git --help                                                      = Listado de Comandos de git
-git init                                                        = Inicializa un repositorio
+git --help
+git config --list                                               = Informe de configuracion de repositorios                                                      = Listado de Comandos de git
 git config --global user.name ""                                = Configuración unicial nombre de usuario
 git config --global user.email prueba@ejemplo.com               = Configuración unicial nombre de email
 
 
 COMANDOS GIT DE CONFIGURACION DE CAMBIOS EN ARCHIVOS:
-
+git init                                                        = Inicializa un repositorio
 git status                                                      = Muestra los archivos afectados con cambios
-git add .                                                       = Agrega los cambios de los archivos
-git config --list                                               = Informe de configuracion
-
-git commit -m "Comentario referente a la modificacion"          = Agregar y confirmar un cambio por medio de un comentario
-git remote add origin https:                                    = Agregar sitio remoto del repositio creado
-git push origin rama                                            = Confirmar los cambios en la rama 
-git branch --list                                               = Visualizacion de ramas
-git branch                                                      = Ver las ramas creadas en el repositorio *Rama en la que se trabaja en el momento
-git branch [nueva_rama]                                         = Crear rama 
-git checkout [nueva_rama]                                       = Cambio de ramas
-git branch -d [nueva_rama]                                      = Eliminar rama UBICANDOSE EN LA RAMA MAESTRA OJO
+git add .                                                       = Agrega los cambios de los archivos al repositorio
+git commit -m "Comentario referente a la modificacion"          = Agregar y confirmar un cambio por medio de un comentario 
+git push -u origin master                                       = Actualiza los cambios a nivel local
 git merge [rama]                                                = Unificacion de ramas, Se debe UBICAR EN LA RAMA MAESTRA Y UTILIZAR EL COMANDO
 git remote add origin git@github.com:hovanegasr/1aClaseGit.git  = Enviar y confirmar cambios al repositorio
-git push -u origin master                                       = Actualiza los cambios a nivel local
-git log -- oneline                                              = ver nuestro historial de commits
+git remote add origin [https:]                                  = Agregar cambios al sitio remoto del repositorio
+
+COMANDOS PARA TRABAJAR EN RAMAS
+git branch --list                                               = Visualizacion de ramas
+git branch                                                      = Ver las ramas creadas en el repositorio * Rama en la que se trabaja en el momento
+git branch [nueva_rama]                                         = Crear rama 
+git checkout [nueva_rama]                                       = Cambio ENTRE ramas
+git branch -d [nueva_rama]                                      = Eliminar rama UBICANDOSE EN LA RAMA MAESTRA OJO
 git revert [3321844]                                            = Deshace el commit indicado [#######]- Crea uno nuevo como test
 git merge                                                       = Fusiona la rama trabajada con la rama padre
-
+git log -- oneline                                              = ver nuestro historial de commits
 
 

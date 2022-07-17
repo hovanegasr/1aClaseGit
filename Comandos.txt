@@ -1,5 +1,6 @@
 COMANDOS GIT DE CONFIGURACION INICIAL:
 git --help
+git log --online                                                = Muestra el historial de commits 1 SOLA LINEA
 git config --list                                               = Informe de configuracion de repositorios                                                      = Listado de Comandos de git
 git config --global user.name ""                                = Configuración unicial nombre de usuario
 git config --global user.email prueba@ejemplo.com               = Configuración unicial nombre de email
